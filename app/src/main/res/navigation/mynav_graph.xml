@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+        android:id="@+id/mynav_graph"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        app:startDestination="@id/homeFragment">
+
+    <fragment android:id="@+id/homeFragment" android:name="com.example.newsclient.ui.fragment.HomeFragment"
+              android:label="fragment_home" tools:layout="@layout/fragment_home"/>
+    <fragment android:id="@+id/bookmarkFragment" android:name="com.example.newsclient.ui.fragment.BookmarkFragment"
+              android:label="fragment_bookmark" tools:layout="@layout/fragment_bookmark"/>
+    <activity android:id="@+id/NavHost"  android:name="com.example.newsclient.ui.activity.MainActivity"
+              android:label="activity_main" tools:layout="@layout/activity_main"/>
+</navigation>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="10dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/newsImg"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@mipmap/ezpz" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+              android:id="@+id/newstitleTXT"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              tools:layout_editor_absoluteX="16dp"
+              android:text="Ripple Price (XRP) Holding Ground While Ethereum  Bitcoin Takes Hit"
+              android:textSize="17dp"
+              android:textColor="@android:color/black"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="8dp"
+              app:layout_constraintTop_toBottomOf="@+id/newsImg"/>
+
+
+    <TextView
+            android:id="@+id/mediaNameTXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Siliconangle.com"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="10dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="10dp"/>
+
+
+    <View
+            android:id="@+id/view"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@drawable/circleshapewithprimarycolor"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/mediaNameTXT"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="15dp"/>
+
+    <TextView
+              android:id="@+id/dateTXT"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="January 26"
+              android:textSize="12sp"
+              android:layout_marginStart="10dp"
+              app:layout_constraintStart_toEndOf="@+id/view"
+              app:layout_constraintBottom_toBottomOf="parent"
+              android:layout_marginBottom="10dp"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
