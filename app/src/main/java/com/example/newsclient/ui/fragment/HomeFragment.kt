@@ -81,9 +81,17 @@ class HomeFragment : Fragment() {
             Articles(Sources(0,"BBC"),"Dow Jones Futures: Amazon Prime Day, Facebook, "
                 ,"https://www.investors.com/wp-content/uploads/2019/06/stock-amazon-prime-day-01-shutter.jpg","","","Smth"),
             Articles(Sources(0,"BBC"),"Dow Jones Futures: Amazon Prime Day, Facebook,"
-                ,"https://www.investors.com/wp-content/uploads/2019/06/stock-amazon-prime-day-01-shutter.jpg","","","Smth"))
-        Articles(Sources(0,"BBC"),"Dow Jones Futures: Amazon Prime Day, Facebook, "
+                ,"https://www.investors.com/wp-content/uploads/2019/06/stock-amazon-prime-day-01-shutter.jpg","","","Smth") ,
+            Articles(Sources(0,"BBC"),"Dow Jones Futures: Amazon Prime Day, Facebook, "
+            ,"https://www.investors.com/wp-content/uploads/2019/06/stock-amazon-prime-day-01-shutter.jpg","","","Smth"),
+            Articles(Sources(0,"BBC"),"Dow Jones Futures: Amazon Prime Day, Facebook, "
+            ,"https://www.investors.com/wp-content/uploads/2019/06/stock-amazon-prime-day-01-shutter.jpg","","","Smth"),
+            Articles(Sources(0,"BBC"),"Dow Jones Futures: Amazon Prime Day, Facebook,"
+            ,"https://www.investors.com/wp-content/uploads/2019/06/stock-amazon-prime-day-01-shutter.jpg","","","Smth") ,
+            Articles(Sources(0,"BBC"),"Dow Jones Futures: Amazon Prime Day, Facebook, "
             ,"https://www.investors.com/wp-content/uploads/2019/06/stock-amazon-prime-day-01-shutter.jpg","","","Smth")
+        )
+
 
         return sportNewsList
     }
@@ -96,9 +104,12 @@ class HomeFragment : Fragment() {
             Articles(Sources(0,"BBC"),"Dow Jones Futures: Amazon Prime Day, Facebook, "
                 ,"https://www.investors.com/wp-content/uploads/2019/06/stock-amazon-prime-day-01-shutter.jpg","","","Smth"),
             Articles(Sources(0,"BBC"),"Dow Jones Futures: Amazon Prime Day, Facebook,"
-                ,"https://tribktla.files.wordpress.com/2019/07/oil.jpg?quality=85&strip=all&w=1200","","","Smth"))
-        Articles(Sources(0,"BBC"),"Dow Jones Futures: Amazon Prime Day, Facebook, "
-            ,"https://g.foolcdn.com/editorial/images/530678/getty-senior-regrets-unhappy-mad-retiree-mistakes.jpg","","","Smth")
+                ,"https://tribktla.files.wordpress.com/2019/07/oil.jpg?quality=85&strip=all&w=1200","","","Smth"),
+            Articles(Sources(0,"BBC"),"Dow Jones Futures: Amazon Prime Day, Facebook, "
+                ,"https://g.foolcdn.com/editorial/images/530678/getty-senior-regrets-unhappy-mad-retiree-mistakes.jpg","","","Smth")
+
+        )
+
 
         return shuffleNewsList
     }

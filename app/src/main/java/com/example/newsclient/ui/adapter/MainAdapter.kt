@@ -10,6 +10,7 @@ import com.example.newsclient.data.Articles
 import com.example.newsclient.data.MainNews
 import com.example.newsclient.data.News
 import com.example.newsclient.ui.viewholder.HorizontalNewsViewHolder
+import com.example.newsclient.ui.viewholder.ShuffleViewHolder
 import com.example.newsclient.ui.viewholder.VerticalNewsItemViewHolder
 import com.example.newsclient.ui.viewholder.VerticalNewsViewHolder
 
@@ -51,8 +52,11 @@ class MainAdapter (context : Context?, newsList: List<MainNews>): RecyclerView.A
             SPORT_NEWS -> {
                 HorizontalNewsViewHolder(LayoutInflater.from(context).inflate(R.layout.horizontal_news_list_area,parent,false))
             }
+            SHUFFLE_NEWS -> {
+                ShuffleViewHolder(LayoutInflater.from(context).inflate(R.layout.shuffle_news_list_area,parent,false))
+            }
 
-            else -> VerticalNewsItemViewHolder(LayoutInflater.from(context).inflate(R.layout.vertical_news_item,parent,false))
+            else -> ShuffleViewHolder(LayoutInflater.from(context).inflate(R.layout.shuffle_news_list_area,parent,false))
         }
     }
 
@@ -76,9 +80,14 @@ class MainAdapter (context : Context?, newsList: List<MainNews>): RecyclerView.A
                 val horizontalViewHolder : HorizontalNewsViewHolder = holder as HorizontalNewsViewHolder
                 horizontalViewHolder.haveFunWithView(context,getArticlesByPosition(position),"Sport News")
             }
+            SHUFFLE_NEWS -> {
+                val  shuffleViewHolder : ShuffleViewHolder = holder as ShuffleViewHolder
+                shuffleViewHolder.setArticles(context,getArticlesByPosition(position))
+            }
 
             else ->  {
-                val  verticalNewsItemViewHolder : VerticalNewsItemViewHolder = holder as VerticalNewsItemViewHolder
+                val  shuffleViewHolder : ShuffleViewHolder = holder as ShuffleViewHolder
+                shuffleViewHolder.setArticles(context,getArticlesByPosition(position))
             }
 
         }

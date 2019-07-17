@@ -3,10 +3,13 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="170dp"
-        app:cardCornerRadius="5dp"
-        android:layout_margin="10dp">
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        app:cardCornerRadius="2dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -25,7 +25,6 @@
                 android:layout_marginLeft="10dp"
         />
 
-
         <View
                 android:layout_width="55dp"
                 android:layout_height="4dp"
@@ -34,12 +33,43 @@
                 android:background="@color/colorPrimary"/>
 
     </LinearLayout>
-    <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="0dp"
+
+    <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="0dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout" app:layout_constraintBottom_toBottomOf="parent"
-            android:id="@+id/topNewsRecyclerView"/>
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/topNewsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="629dp"
+                android:layout_marginTop="5dp"/>
+
+
+        <LinearLayout
+                android:id="@+id/showmore"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/show_more"
+                      android:textColor="@android:color/white"/>
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/ic_showmore"
+                       android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
