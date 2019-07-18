@@ -10,7 +10,7 @@ import com.example.newsclient.data.Articles
 import com.example.newsclient.ui.adapter.NewsAdapter
 
 class VerticalNewsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-    private val topNewsRecyclerView : RecyclerView = itemView.findViewById(R.id.topNewsRecyclerView)
+    private val topNewsRecyclerView : RecyclerView = itemView.findViewById(R.id.foryouRecycler)
 
     fun initiateVerticalViewHolder(context: Context?,articleList: List<Articles>){
         val newsAdapter  = NewsAdapter(context,0)

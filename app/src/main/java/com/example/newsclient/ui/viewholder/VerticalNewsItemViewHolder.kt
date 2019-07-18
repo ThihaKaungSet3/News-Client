@@ -18,6 +18,7 @@ class VerticalNewsItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemV
     private var shareImageView : ImageView = itemView.findViewById(R.id.shareImage)
 
 
+
     fun havefunwithViews(articles: Articles){
         newsTitleTextView.text = articles.title
         mediaNameTextView.text = articles.source.name

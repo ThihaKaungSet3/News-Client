@@ -4,4 +4,7 @@
     <string name="bookmark">Bookmark</string>
     <string name="topnews">Top News</string>
     <string name="show_more">Show more</string>
+    <string name="foryou">For you</string>
+    <string name="seeall">See all</string>
+    <string name="topicsforyou">Topics For You</string>
 </resources>

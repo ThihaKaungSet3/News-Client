@@ -17,8 +17,11 @@ class HorizontalNewsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemVie
         categoryTXT.text = category
         val newsAdapter = NewsAdapter(context,1)
         newsAdapter.setArticleLists(articleList)
-        horizontalRecyclerView.layoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
-        horizontalRecyclerView.adapter = newsAdapter
+
+        horizontalRecyclerView.apply {
+            layoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
+            adapter = newsAdapter
+        }
 
     }
 
